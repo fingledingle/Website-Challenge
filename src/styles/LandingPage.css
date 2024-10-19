@@ -1,0 +1,283 @@
+
+
+.landing-page{
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.landing-page .middle{
+    width: 70vw;
+    height: 98vh;
+    position: relative;
+
+}
+
+.landing-page .left{
+    position: absolute;
+    left: 6%;
+    top: 39%;
+    border-style: none;
+    background-color: transparent;
+}
+
+.landing-page .right{
+    transform: scaleX(-1);
+    position: absolute;
+    right: 6%;
+    top: 39%;
+    border-style: none;
+    background-color: transparent;
+}
+
+.middle .ver-colecao{
+    z-index: 1;
+
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    padding: 12px 20px;
+    border-style: none;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    top: 58.5%;
+    left: 47%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.landing-page .carousell-dots{
+    bottom: 31%;
+    border: none;
+    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    left: 8%;
+    z-index: 2;
+
+    position: absolute;
+    
+}
+
+.landing-page .carousell-dots button{
+    background: black;
+    border-radius: 50%;
+    border-style: none;
+
+    padding: 5px;
+}
+
+
+.landing-page .cool{
+    width: 100%;
+    height: 100%;
+
+}
+
+.landing-page .filler{
+    position: absolute;
+    top: 71.5%;
+    left: 0;
+    
+    z-index: 5;
+    width: 100%;
+    height: 9px;
+    background-color: black;
+}
+
+
+/* red thing on the bottom */
+
+.box-container{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 27vh;
+    background-color: #DE5A53;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+
+}
+
+
+.landing-page .box-info{
+    /* margin: 10px; */
+    border: white solid 1px;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.box-info .firstBox{
+    display: flex;
+    gap: 10px;
+    height: 100%;
+    width: 16vw;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+}
+
+
+.box-info .firstBox h1{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 140px;
+}
+
+.firstBox .beneficio1{
+    font-family: Sora;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.box-info .firstBox h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.box-info .firstBox h3{
+    font-size: 14px;
+    font-weight: 300;
+    width: 170px;
+}
+
+
+
+
+
+
+.box-info .secondBox{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+ 
+}
+
+.box-info .secondBox .top-row{
+    display: flex;
+    flex-direction: row;
+    width: 39vw;
+    
+}
+
+
+.top-row .beneficio2:nth-child(1),
+.top-row .beneficio2:nth-child(2){
+    border-right: solid white 1px;
+}
+
+
+.top-row .beneficio2{
+    display: flex;
+    border-bottom: 1px solid white;
+    width: 13vw;
+    height: 100%;
+    padding: 17px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.top-row .beneficio2 .prize-text{
+    display: flex;
+    font-family: 'Sora';
+    gap: 20px;
+    
+    
+}
+
+.top-row {
+    align-items: stretch; /* Ensures all items stretch to full height */
+}
+
+.beneficio2 .prize-text img{
+    width: 50px;
+    height: 50px;
+}
+
+.beneficio2 .prize-text h2{
+    text-align: right;
+    font-weight: 700;
+    font-size: 22px;
+    color: white;
+}
+
+.top-row .beneficio2 p{
+    color: white;
+    font-size: 14px;
+    
+}
+
+
+
+
+
+.secondBox .bottom-row{
+    width: 39vw;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: clip;
+    text-wrap: nowrap;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    /* padding: 10px */
+}
+
+
+
+.secondBox .bottom-row h3{
+    
+    transform: translateX(-17px);
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    color: white;
+
+    font-size: 19px;
+
+
+}
+
+.bottom-row h3 img{
+    padding-left: 20px;
+
+}
+
+.bottom-row h3:nth-child(1) img,
+.bottom-row h3:nth-child(3) img{
+    transform: scaleX(-1) translateX(-17px);
+    
+}
+
+
+
+
+
+
+

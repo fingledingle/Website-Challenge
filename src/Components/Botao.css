@@ -1,0 +1,11 @@
+.botao-container .botao{
+    margin-top: 30px;
+    padding: 8px 35px;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: auto;
+    text-transform: uppercase;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 20px;
+}
