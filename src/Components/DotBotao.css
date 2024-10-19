@@ -1,0 +1,10 @@
+.dot_botao button{
+    padding: 1px 7px;
+    border-style: none;
+    border-radius: 50%;
+    font-family: Sora;
+    font-weight: 400;
+    background-color: white;
+    font-size: 20px;
+
+}

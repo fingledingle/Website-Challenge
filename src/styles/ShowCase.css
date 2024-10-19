@@ -1,0 +1,107 @@
+.show_case{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.show_case .show_case_page{
+    width: 70vw;
+    position: relative;
+}
+
+.show_case .show_case_page .product_num{
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    z-index: 5;
+}
+
+
+.show_case .show_case_page .product_num:nth-child(2){
+   top: 49%;
+   left: 21%;
+}
+
+
+.show_case .show_case_page .product_num:nth-child(3){
+    top: 53.5%;
+    left: 34.5%;;
+}
+
+
+.show_case .show_case_page .product_num:nth-child(4){
+    top: 13.9%;
+    left: 42.5%;;
+}
+
+.show_case .show_case_page .product_num:nth-child(4){
+    top: 14%;
+    left: 42.5%;;
+}
+
+
+.show_case .show_case_page .product_num:nth-child(5){
+   top: 25%;
+   left: 62%;
+}
+
+
+
+
+.show_case .show_case_page img{
+    width: 100%;
+}
+
+
+
+.show_case .show_case_page .box{
+    position: absolute;
+    top: 7%;
+    left: 77%;
+    width: 282px;
+    height: 322px;
+    background-color: white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25px;
+
+
+}
+
+.show_case_page .box h3{
+    font-size: 30px;
+    font-family: Sora;
+    font-weight: 700;
+    line-height: 37.8px;
+
+}
+
+.show_case_page .box p{
+    
+    width: 232px;
+    font-family: Sora;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17.64px;
+}
+
+.show_case_page .box button{
+    width: 182px;
+    height: 45px;
+    padding: 12px 24px;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21.42px;
+    text-transform: uppercase;
+    background-color: white;
+    border-style: none;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+

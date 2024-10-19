@@ -1,0 +1,56 @@
+.cat_card {
+    overflow: hidden;
+    width: 270px;
+    height: 481px;
+    position: relative;
+    
+}
+
+.cat_card img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cat_card .likes{
+    /* background-color: red; */
+    width: 35px;
+    position: absolute;
+    top: 87%;
+    left: 81%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+.cat_card .likes button{
+    background-color: transparent;
+    border-style: none;
+    padding: 10px 10px;
+    height: 60px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.cat_card .likes button img{
+    width: 20.9px;
+    position: absolute;
+    top: 10px;
+    height: 18.23px;
+}
+
+.cat_card .likes button p{
+    position: absolute;
+    top: 28px;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    color: white;
+}
