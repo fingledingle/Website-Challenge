@@ -8,4 +8,13 @@
     font-family: Sora;
     font-weight: 400;
     font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.botao-container .botao img{
+    width: 38px;
+    height: 36px;
 }

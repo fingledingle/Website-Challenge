@@ -17,7 +17,7 @@
     background-color: white;
     position: relative;
     width: 100%;
-    height: 50%;
+    height: 64%;
     display: flex;
     flex-direction: row;
     /* gap: 100px; */
@@ -27,7 +27,7 @@
 
 .produtos-page .top-part .queridinho{
     position: absolute;
-    top: -50px;
+    top: -130px;
     width: 25%;
     background-color: white;
     height: 97%;
@@ -83,7 +83,7 @@
 
 .produtos .produtos-page .categorias{
     position: absolute;
-    top: 80%;
+    top: 79%;
     width: 100%;
     height: 100px;
     /* background-color: red; */
@@ -97,5 +97,10 @@
     letter-spacing: 8px;
     text-align: center;
 
+}
 
+.produtos-page .categorias .produtos-categorias-bottom{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between
 }
