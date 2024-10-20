@@ -1,5 +1,9 @@
 import React from "react";
-import image from './assets/1.png'
+import image1 from './assets/1.png'
+import image2 from './assets/2.png'
+import image3 from './assets/3.png'
+
+
 import prize from './assets/prize.png'
 import paw from './assets/paw.png'
 import './styles/LandingPage.css'
@@ -13,7 +17,15 @@ function LandingPage(){
             <div className="landing-page">
                 <div className="middle">
                     
-                    <img src={image} className="cool" alt='caroussel-image' />
+
+                    <div className="carousel">
+                        <img src={image2} alt="" />
+                        <img src={image1} className="carousel_image" alt='caroussel-image' />
+                        <img src={image3} alt="" />
+
+                    </div>
+                    
+                   
                     
                     <button className="ver-colecao">VER COLEÇÃO</button>
                     

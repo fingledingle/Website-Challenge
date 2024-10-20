@@ -1,0 +1,459 @@
+.newsletter {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+
+.newsletter .newsletter_page {
+    width: 70vw;
+    position: relative;
+
+
+}
+
+.newsletter .newsletter_page .random_divider{
+    position: absolute;
+    top: 14%;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+
+
+/* TOPPAGE */
+
+
+.newsletter .newsletter_page .top{
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 20%;
+
+}
+
+
+
+
+
+/* CATBOXQ */
+
+.newsletter_page .top .cat_container{
+    width: 505px;
+    height: 347px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.top .cat_container .newsletter_cat{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -59%;
+}
+
+
+
+
+/* NEWSLETTERBOX */
+
+    .newsletter_page .top .newsletter_box{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 45%;
+        left: 39%;
+    }
+
+
+
+    /* NEWSLETTER TEXT */
+
+    .top .newsletter_box h2{
+        position: absolute;
+        top: -100px;
+        z-index: 5;
+        width: 341px;
+        font-family: Sora;
+        font-weight: 400;
+        font-size: 50px;
+        line-height: 63px;
+    }
+
+
+
+
+    /* FORM AND INFO */
+
+    .newsletter_box .form_and_info{
+        position: absolute;
+        background-color: transparent;
+        display: flex;
+        gap: 45px;
+        justify-content: center;
+    }
+
+
+        /* INFO */
+
+        .newsletter_box .form_and_info .info{
+            display: flex;
+            width: 274px;
+            flex-direction: column;
+            
+            font-family: Sora;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 25px;
+
+        }
+
+        .form_and_info .info p:nth-child(1){
+            font-weight: 700;
+        }
+
+
+        /* FORM */
+        .newsletter_box .form_and_info form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+            /* FORM LABEL */
+
+            .form_and_info form label{
+                font-family: Sora;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+            }
+
+            /* FORM INPUT */
+
+            .form_and_info form input{
+                width: 220px;
+                font-family: Sora;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 25px;
+                border-style: none;
+                background-color: transparent;
+                border-radius: 30px;
+            }
+
+            .form_and_info form input:focus{
+                outline: none;
+            }
+
+                /* NOME DO PET */
+                .form_and_info form .nome_box {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .form_and_info form .nome_box .nome{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+
+                /* DIVIDING SPAM` */
+
+                .form_and_info form .divider{
+                    margin-top: 5px;
+                    width: 400px;
+                    height: 2px;
+                    background-color: black;
+                }
+
+                /* EMAIL */
+
+                .form_and_info form .email_box {
+                    margin-top: 24px;
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .form_and_info form .email_box .email{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 20px;
+                }
+
+                /* SUBMIT */
+
+                .form_and_info form .submit{
+                    /* background-color: brown; */
+                }
+
+/* BOTTOM PART */
+    .newsletter .newsletter_page .bottom_box{
+        width: 100%;
+        height: 189px;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 62%;
+        border: 1px solid black;
+    }
+
+
+    /* LOGO */
+
+    .newsletter_page .bottom_box .logo_box{
+        display: flex;
+        background-color: #373737;
+        justify-content: center;
+        align-items: center;
+        width: 210px;
+    }
+
+    /* LEFTSIDE */
+
+    .bottom_box .left{
+        display: flex;
+        flex-direction: column;
+        border-right: 1px solid black;
+
+        
+    }
+
+        /* LEFT TOP */
+
+        .bottom_box .left .categorias{
+            border-bottom: 1px solid;
+            width: calc(210px + 310px);
+            width: auto;
+        }
+
+        
+        .bottom_box .left .categorias ul{
+            padding: 15px 10px;
+            display: flex;
+            gap: 30px;
+            flex-direction: row;
+            list-style: none;
+            font-family: Sora;
+            font-weight: 700;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .left .categorias ul a{
+            text-decoration: none;
+            color: black;
+
+
+        }
+        
+        /* LEFT BOTTOM */
+
+        .bottom_box .left .bottom_left{
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+            gap: 1px;
+        }
+
+        /* FORMAS PAGAMENTO */
+
+            .bottom_box .left .bottom_left .formas_de_pagamento{
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                gap: 10px;
+                border-right: solid 1px black;
+                width: 210px;
+                font-family: Sora;
+                font-weight: 700;
+                padding: 15px 15px;
+                font-size: 12px;
+                text-transform: uppercase;
+            }
+            .left .bottom_left .formas_de_pagamento ul{
+                filter: grayscale(100%);
+                display: flex;
+                width: 159px;
+                list-style: none;
+                flex-wrap: wrap;
+                flex-direction: row;
+                gap: 2px;
+            }
+
+            .bottom_left .formas_de_pagamento ul img{
+                width: 37.87px;
+                height: 23.91px;
+            }
+        
+        /* CERTIFICADOS E SEGURANCA */
+
+            .bottom_box .bottom_left .certificados{
+                display: flex;
+                flex-direction: column;
+                font-family: Sora;
+                height: 100%;
+                width: 310px;
+                font-weight: 700;
+                font-size: 12px; 
+                text-transform: uppercase;
+                padding: 15px 15px;
+
+            }
+
+            .bottom_left .certificados ul{
+                filter: grayscale(100%);
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                list-style: none;
+                
+            }
+
+            .certificados ul img{
+                width: 100%;
+            }
+
+            .certificados ul li:nth-child(1){
+                background-color: transparent;
+                width: 68px;
+                height: 100px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .certificados ul li:nth-child(2){
+                width: 68px;
+                height: 75px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .certificados ul li:nth-child(3){
+                width: 110px;
+                height: 46px;
+                overflow: hidden;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+    /* RIGHT SIDE */
+        
+        /* AJUDA */
+        .bottom_box .right{
+            display: flex;
+        }
+
+        .bottom_box .right .ajuda{
+            font-family: Sora;
+            height: 100%;
+            width: 250px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 25px;
+            padding: 9px 20px;
+            border-right: 1px solid ;
+        }
+
+
+            /* AJUDA TEXTO */
+
+            .bottom_box .right .ajuda p{
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+
+            .bottom_box .right .ajuda ul{
+                width: 143px;
+                height: 134px;
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                
+            }
+
+        /* CONTATO  E REDES*/
+        .bottom_box .right .contatos_redes{
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            
+        }
+
+        .right .contatos_redes .contato{
+            padding: 9px 20px;
+            border-bottom: 1px solid black;
+            height: 50;
+        }
+
+        .right .contatos_redes .contato p{
+            font-family: Sora;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 25px;
+        }
+
+        .right .contatos_redes .contato p:nth-child(1){
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+
+
+
+        .right .contatos_redes .redes{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            padding: 9px 20px;
+        }
+
+        .right .contatos_redes .redes p{
+            font-family: Sora;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 25px;
+        }
+
+        .right .contatos_redes .redes ul{
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            flex-direction: row;
+        }
+
+        .right .contatos_redes .redes ul li{
+            font-size: 24px;
+        }
+
+/* .end{
+    position: absolute;
+    top: 84%;
+}
+ */
+
+
+
+    
+
+
+
+
+
+
+        
+
+

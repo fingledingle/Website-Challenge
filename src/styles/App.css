@@ -1,5 +1,10 @@
 .app-container {
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    min-height: 100vh; /* Ensures the entire viewport is utilized */
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
 }

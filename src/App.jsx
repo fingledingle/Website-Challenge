@@ -7,11 +7,17 @@ import './styles/App.css'
 import ShowCase from './ShowCase'
 import DecorarArranhar from './DecorarArranhar'
 import AdoradoresdePapelao from './AdoradoresdePapelao'
+import NewsLetter from './NewsLetters'
+import Footer from './Footer'
 
 function App() {
 
-  return (
+  // const myRef = useRef(null);
 
+  // function scrollToElemenet(){
+
+
+  return (
     <div className="app-container">
       <NavBar/>
       <LandingPage/>
@@ -20,7 +26,8 @@ function App() {
       <ShowCase/>
       <DecorarArranhar/>
       <AdoradoresdePapelao/>
-    
+      <NewsLetter/>
+      <Footer/>
     </div>
   )
 }
