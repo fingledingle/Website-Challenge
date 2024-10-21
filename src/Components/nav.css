@@ -5,6 +5,7 @@ nav{
     left: 50%;
     transform: translateX(-50%);
     top: 30px;
+    justify-content: center;
     width: 1280px;
 }
 
@@ -113,7 +114,7 @@ nav .nav_container .lado_direito .anchors{
     align-items: center;
     gap: 20px;
     height: 100%;
-    width: 500px;
+    width: 550px;
     border-right: white solid 1px;
     padding-right: 15px;
 }

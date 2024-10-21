@@ -3,10 +3,9 @@ import './Card.css'
 import basket from '../assets/shopping-basket.png'
 
 
-function Card({item, setProductInCart}){
+function Card({item, setProductInCart, productinCart}){
     function handleCart(){
-        console.log(setProductInCart)
-        setProductInCart(!item.productinCart)
+        setProductInCart(!productinCart)
     }
     return(
         <div className="card">

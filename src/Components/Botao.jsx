@@ -3,7 +3,6 @@ import './Botao.css'
 
 
 function Botao({botao}){
-    console.log(botao.image)
     return(
         <div className="botao-container">
             <button style={{backgroundColor: botao.cor}} className="botao">

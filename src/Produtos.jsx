@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles/Produtos.css'
 import Card from "./Components/Card";
 import ItemSale from './assets/produto.png'
@@ -48,7 +48,7 @@ const produtos = [
 
 const produtosCategoria = [
     {
-        modelo: 'classico',
+        modelo: 'CLÁSSICO',
         image: item1,
 
     },
@@ -71,6 +71,12 @@ const produtosCategoria = [
 ]
 
 function Produtos({setProductInCart, productinCart}){
+    const [clicked, setIsClicked] = useState(false);
+
+    function handleClick(){
+        setIsClicked(!clicked);
+    }
+
     return(
         <div className="produtos">
             <div className="produtos_page">    
@@ -92,7 +98,7 @@ function Produtos({setProductInCart, productinCart}){
                                 </div>
 
                                 <span className="span-botao">
-                                    <button>VER TUDO</button>
+                                    <button onClick={handleClick}>VER TUDO</button>
                                 </span>
 
 

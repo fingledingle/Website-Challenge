@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles/Colecoes.css'
 import image1 from './assets/image 5.png'
 import rectangle from './assets/Rectangle.png'
@@ -6,6 +6,13 @@ import kittyHouse from './assets/kitty.png'
 import circle from './assets/Circle.png'
 
 function Colecoes(){
+    const [wasClicked, setWasClicked] = useState(false);
+
+
+    function handleClick(){
+        setWasClicked(!wasClicked);
+    }
+
     return(
         <div className="colecoes">
 
@@ -57,7 +64,12 @@ function Colecoes(){
 
                     <div className="button-text">
                         <p>Also reality power discussion buy-in closest goto model. Have protocol at long practices low-hanging data most driver's.</p>
-                        <button>explorar</button>
+                        <button
+                            // style={{backgroundColor: wasClicked ? 'black': 'white'}}
+                            onClick={handleClick}
+                        >
+                            explorar
+                        </button>
                     </div>
 
 

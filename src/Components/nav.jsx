@@ -10,7 +10,8 @@ import menu from '../assets/menu.png';
 
 // const [notificacao, setNotificacao] = useState(true);
 
-function NavBar(){
+function NavBar({productinCart, setProductInCart}){
+
     return(
         
             <nav>
@@ -62,7 +63,14 @@ function NavBar(){
 
                         <div className="carrinho">
                             <img src={cart} alt="" />
-                            <img src={notification} alt="" />
+
+                            {productinCart
+                                ?
+                                <img src={notification} alt="" />
+                                :
+                                ""                        
+                            
+                            }
                         </div>
                     </div>
                     

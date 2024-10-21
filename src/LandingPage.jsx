@@ -19,7 +19,10 @@ function LandingPage(){
                     
                     <div className="top">
                         <div className="carousel_box">
+                            {/* <img src={image2} alt="" /> */}
                             <img src={image1} className="carousel_image" alt='caroussel-image' />
+                            {/* <img src={image3} alt="" /> */}
+
                         </div>
 
                         
