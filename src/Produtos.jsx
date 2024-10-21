@@ -70,7 +70,7 @@ const produtosCategoria = [
 
 ]
 
-function Produtos(){
+function Produtos({setProductInCart, productinCart}){
     return(
         <div className="produtos">
             <div className="produtos-page">         
@@ -99,6 +99,8 @@ function Produtos(){
                             <Card
                                 key = {index}
                                 item = {item}
+                                setProductInCart={setProductInCart}
+                                productinCart={productinCart}
                             />
                         ))}
 

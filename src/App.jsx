@@ -12,17 +12,22 @@ import Footer from './Footer'
 
 function App() {
 
-  // const myRef = useRef(null);
-
-  // function scrollToElemenet(){
+  const [productinCart, setProductInCart] = useState(false);
 
 
   return (
     <div className="app-container">
-      <NavBar/>
+      {/* <NavBar
+        productinCart={productinCart}
+        setProductInCart={setProductInCart}
+      /> */}
       <LandingPage/>
       <Colecoes/>
-      <Produtos/>
+      <Produtos 
+        //prop drilling :(
+        setProductInCart={setProductInCart}
+        productinCart={productinCart}
+      />
       <ShowCase/>
       <DecorarArranhar/>
       <AdoradoresdePapelao/>

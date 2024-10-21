@@ -183,6 +183,7 @@ li .color-and-text .color button{
     left: 3%;
     top: 44%;
     transition: all 0.5s;
+    background-color: transparent;
     
 }
 

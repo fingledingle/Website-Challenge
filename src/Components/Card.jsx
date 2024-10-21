@@ -3,8 +3,11 @@ import './Card.css'
 import basket from '../assets/shopping-basket.png'
 
 
-function Card({item}){
-    console.log(item)
+function Card({item, setProductInCart}){
+    function handleCart(){
+        console.log(setProductInCart)
+        setProductInCart(!item.productinCart)
+    }
     return(
         <div className="card">
             <li>
@@ -54,7 +57,7 @@ function Card({item}){
                         <p>R${item.priceNow}</p>
                     </div>
 
-                    <div className="adicionar-ao-carrinho">
+                    <button onClick={handleCart} className="adicionar-ao-carrinho">
                         <p>
                             ADICIONAR AO CARRINHO
                         </p>
@@ -63,7 +66,7 @@ function Card({item}){
                         
 
                         
-                    </div>
+                    </button>
 
 
 

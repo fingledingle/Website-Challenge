@@ -1,128 +1,112 @@
 
 
 .landing-page{
-    height: 100vh;
+    /* width: 100vh;
+    height: 100vh; */
     background-color: white;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: relative; */
+}
+
+.landing-page .middle{
+    top: 5px;
+    width: 1280px;
+    margin-top: 10px;
+    /* height: 660px; */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
 
-.landing-page .middle{
-    width: 70vw;
-    height: 98vh;
-    position: relative;
+    .landing-page .top{
+        position: relative;
+    }
 
-}
+    .landing-page .left{
+        position: absolute;
+        left: 6%;
+        top: 54%;
+        width: 59px;
+        border-style: none;
+        background-color: transparent;
+    }
 
-.landing-page .left{
-    position: absolute;
-    left: 6%;
-    top: 39%;
-    border-style: none;
-    background-color: transparent;
-}
+    .landing-page .right{
+        transform: scaleX(-1);
+        position: absolute;
+        right: 6%;
+        top: 54%;
+        width: 59px;
+        border-style: none;
+        background-color: transparent;
+    }
 
-.landing-page .right{
-    transform: scaleX(-1);
-    position: absolute;
-    right: 6%;
-    top: 39%;
-    border-style: none;
-    background-color: transparent;
-}
+    .middle .ver-colecao{
+        z-index: 1;
 
-.middle .ver-colecao{
-    z-index: 1;
+        font-family: "Sora", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        width: 157px;
+        height: 46px;
+        border-style: none;
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 600;
+        top: 81%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
 
-    font-family: "Sora", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
+    .landing-page .carousell-dots{
+        position: absolute;
+        bottom: 5%;
+        border: none;
+        width: 70px;
+        height: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        left: 7%;
+        z-index: 2;        
+    }
 
-    padding: 12px 20px;
-    border-style: none;
-    color: white;
-    background-color: black;
-    border-radius: 20px;
-    font-size: 1.1rem;
-    top: 58.5%;
-    left: 47%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-}
-
-.landing-page .carousell-dots{
-    bottom: 31%;
-    border: none;
-    
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    left: 8%;
-    z-index: 2;
-
-    position: absolute;
-    
-}
-
-.landing-page .carousell-dots button{
-    background: black;
-    border-radius: 50%;
-    border-style: none;
-
-    padding: 5px;
-}
-
-.carousel{
-    position: absolute;
-    left: -22%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    /* gap: 50px; */
-    overflow-y: hidden;
-    overflow-x: hidden;
-    position: relative;
-    height: 660px;
-}
-
-.carousel img:nth-child(1){
-    position: absolute;
-    left: -55.5%;
-    width: 70vw;
-}
+    .landing-page .carousell-dots button{
+        background: black;
+        border-radius: 50%;
+        border-style: none;
+        width: 10px;
+        height: 10px;
+    }
 
 
-.carousel img:nth-child(2){
-    position: absolute;
-    left: 296px;
-    width: 70vw;
-    height: 98vh;
-}
+    .landing-page .carousel_box{
+        position: relative;
+        overflow: hidden;
+        width: 1179px;
+        height: 559px;
+    }
 
+    .landing-page .carousel_box .carousel_image{
+        position: absolute;
+        object-fit: cover;
+        width: 1179px;
+        height: 780px;
 
-
-.carousel img:nth-child(3){
-    position: absolute;
-    left: 86.3%;
-    width: 70vw;
-}
-
-
-.landing-page .carousel_image{
-    width: 100%;
-    height: 100%;
-
-}
+    }
 
 .landing-page .filler{
-    position: absolute;
-    top: 71.5%;
-    left: 0;
+    /* position: absolute; */
     
-    z-index: 5;
-    width: 100%;
+    z-index: 10;
+    width: 1179px;
     height: 9px;
     background-color: black;
 }
@@ -131,11 +115,11 @@
 /* red thing on the bottom */
 
 .box-container{
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
-    height: 27vh;
+    width: 1179px;
+    height: 238px;
     background-color: #DE5A53;
     display: flex;
     justify-content: center;
@@ -147,38 +131,52 @@
 
 .landing-page .box-info{
     /* margin: 10px; */
+    width: 1030px;
+    height: 180px;
     border: white solid 1px;
     height: 100%;
     margin: 0;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 
 
 
 .box-info .firstBox{
-    display: flex;
-    gap: 10px;
-    height: 100%;
-    width: 16vw;
-    padding: 10px;
+    position: relative;
+    gap: 15px;
+    height: 180px;
+    width: 315px;
+    padding: 0px 10px;
     color: white;
     justify-content: center;
     align-items: center;
+    /* background-color: red; */
     border-right: 1px solid white;
 }
 
 
 .box-info .firstBox h1{
-    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: -23px;
+    align-items: center;
+    font-family: "Oswald";
+    
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 250;
     font-size: 140px;
+    height: 113px;
+    width: 119px;
+    line-height: 207.48px;
 }
 
 .firstBox .beneficio1{
+    position: absolute;
+    left: 45%;
+    top: 20px;
     font-family: Sora;
     display: flex;
     flex-direction: column;
@@ -189,6 +187,7 @@
 .box-info .firstBox h2{
     font-size: 30px;
     font-weight: 700;
+    line-height: 37.8px;
 }
 
 .box-info .firstBox h3{
@@ -211,9 +210,7 @@
 
 .box-info .secondBox .top-row{
     display: flex;
-    flex-direction: row;
-    width: 39vw;
-    
+    flex-direction: row;    
 }
 
 
@@ -226,8 +223,8 @@
 .top-row .beneficio2{
     display: flex;
     border-bottom: 1px solid white;
-    width: 13vw;
-    height: 100%;
+    width: 239.33px;
+    height: 129px;
     padding: 17px 20px;
     flex-direction: column;
     justify-content: center;
@@ -246,11 +243,12 @@
 
 
 .beneficio2 .prize-text img{
-    width: 50px;
-    height: 50px;
+    width: 46.87px;
+    height: 47.01px;
 }
 
 .beneficio2 .prize-text h2{
+    width: 130.64px;
     text-align: right;
     font-weight: 700;
     font-size: 22px;
@@ -258,18 +256,16 @@
 }
 
 .top-row .beneficio2 p{
+    font-family: Sora;
     color: white;
     font-size: 14px;
+    font-weight: 300;
     
 }
 
-
-
-
-
 .secondBox .bottom-row{
-    width: 39vw;
-    height: 100%;
+    width: 716px;
+    height: 52px;
     overflow: hidden;
     text-overflow: clip;
     text-wrap: nowrap;
@@ -277,7 +273,6 @@
     align-items: center;
     flex-direction: row;
     gap: 20px;
-    /* padding: 10px */
 }
 
 
@@ -287,17 +282,15 @@
     transform: translateX(-17px);
     font-family: "Sora", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     color: white;
-
-    font-size: 19px;
-
-
+    font-size: 18px;
+    line-height: 22.68px;
 }
 
 .bottom-row h3 img{
-    padding-left: 20px;
+    padding-left: 21px;
 
 }
 
