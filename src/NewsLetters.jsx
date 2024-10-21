@@ -59,15 +59,9 @@ function NewsLetter(){
 
                                 </div>
 
-                                <span className="submit">
-                                    <Botao
-                                        botao={{
-                                            texto: 'cadastrar',
-                                            cor: 'white'
-                                        }}
-                                    
-                                    />
-                                </span>
+                                <button className="submit">
+                                    CADASTRAR
+                                </button>
                                 
 
 

@@ -1,22 +1,30 @@
 .newsletter {
     display: flex;
     justify-content: center;
-    /* height: 100vh; */
-    
+    width: 1280px;
+    position: absolute;
+    top: 550%;
+    height: 660px;    
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
-.newsletter .newsletter_page {
-    width: 70vw;
+
+
+.newsletter .newsletter_page{
+    width: 100%;
     position: relative;
-
-
+    
+    
 }
 
 .newsletter .newsletter_page .random_divider{
     position: absolute;
-    top: 14%;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 1240px;
     height: 2px;
     background-color: black;
 }
@@ -28,12 +36,13 @@
 
 .newsletter .newsletter_page .top{
     background-color: transparent;
-    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1240px;
     display: flex;
     gap: 20px;
     position: absolute;
-    top: 20%;
-
+    top: 45px
 }
 
 
@@ -76,7 +85,8 @@
 
     .top .newsletter_box h2{
         position: absolute;
-        top: -100px;
+        top: -98px;
+        left: 35px;
         z-index: 5;
         width: 341px;
         font-family: Sora;
@@ -94,6 +104,7 @@
         position: absolute;
         background-color: transparent;
         display: flex;
+        left: 35px;
         gap: 45px;
         justify-content: center;
     }
@@ -105,7 +116,7 @@
             display: flex;
             width: 274px;
             flex-direction: column;
-            
+            gap: 5px;
             font-family: Sora;
             font-size: 14px;
             font-weight: 400;
@@ -190,18 +201,30 @@
                 /* SUBMIT */
 
                 .form_and_info form .submit{
-                    /* background-color: brown; */
+                    margin-top: 35px;
+                    width: 188px;
+                    height: 39px;
+                    font-family: Sora;
+                    font-weight: 400;
+                    font-size: 20px;
+                    border-radius: 30px;
+                    border-style: none;
+                    border: 1px solid black;
+                    background-color: white;
+
                 }
 
 /* BOTTOM PART */
     .newsletter .newsletter_page .bottom_box{
-        width: 100%;
+        width: calc(1030px + 210px);
         height: 189px;
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 62%;
+        top: 67%;
         border: 1px solid black;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
 
@@ -213,6 +236,7 @@
         justify-content: center;
         align-items: center;
         width: 210px;
+        height: 189px;
     }
 
     /* LEFTSIDE */
@@ -229,8 +253,7 @@
 
         .bottom_box .left .categorias{
             border-bottom: 1px solid;
-            width: calc(210px + 310px);
-            width: auto;
+            width: 525px;
         }
 
         
@@ -342,12 +365,13 @@
             }
 
             .certificados ul li:nth-child(3){
-                width: 110px;
+                width: 120px;
                 height: 46px;
                 overflow: hidden;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                position: relative;
             }
 
     /* RIGHT SIDE */
@@ -359,8 +383,7 @@
 
         .bottom_box .right .ajuda{
             font-family: Sora;
-            height: 100%;
-            width: 250px;
+            /* width: 210px; */
             font-size: 12px;
             font-weight: 400;
             line-height: 25px;
@@ -377,8 +400,8 @@
             }
 
             .bottom_box .right .ajuda ul{
-                width: 143px;
-                height: 134px;
+                width: 180px;
+                /* height: 134px; */
                 list-style: none;
                 display: flex;
                 flex-direction: column;
@@ -389,14 +412,15 @@
         .bottom_box .right .contatos_redes{
             display: flex;
             flex-direction: column;
-            width: 360px;
+            width: 295px;
             
         }
 
         .right .contatos_redes .contato{
-            padding: 9px 20px;
+            padding: 9px 10px;
             border-bottom: 1px solid black;
-            height: 50;
+            height: calc(188px / 2);
+            
         }
 
         .right .contatos_redes .contato p{
@@ -418,7 +442,7 @@
             display: flex;
             flex-direction: column;
             gap: 10px;
-            padding: 9px 20px;
+            padding: 9px 10px;
         }
 
         .right .contatos_redes .redes p{

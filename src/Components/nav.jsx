@@ -12,27 +12,26 @@ import menu from '../assets/menu.png';
 
 function NavBar(){
     return(
-        <>
+        
             <nav>
-                <div className="nav_page">
+                <div className="nav_container">
+                
                     <div className="lado_esquerdo">
                         <div className="logo">
                             <img src={logo} alt="logo" />
                         </div>
 
-
-                        <a href="#" className="produtos">
+                        <a href="#" className="produtos_button">
                             <img src={menu} alt="" />
                             <p>produtos</p>
                         </a>
 
-
-                        <a href="#" className="colecoes">
+                        <a href="#" className="colecoes_button">
                             <img src={menu} alt="" />
                             <p>coleções</p>
                         </a>
                     </div>
-
+                     
                     <div className="lado_direito">
                         <div className="anchors">
                             <p>
@@ -66,12 +65,13 @@ function NavBar(){
                             <img src={notification} alt="" />
                         </div>
                     </div>
+                    
 
                 </div>
-
-            </nav>
+            
+            </nav> 
         
-        </>
+        
     )
 }
 

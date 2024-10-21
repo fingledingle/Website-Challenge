@@ -17,10 +17,10 @@ function App() {
 
   return (
     <div className="app-container">
-      {/* <NavBar
+      <NavBar
         productinCart={productinCart}
         setProductInCart={setProductInCart}
-      /> */}
+      />
 
         <LandingPage/>
 
@@ -37,8 +37,8 @@ function App() {
       <ShowCase/>
       <DecorarArranhar/>
       <AdoradoresdePapelao/>
-      {/* <NewsLetter/>
-      <Footer/> */}
+      <NewsLetter/>
+      <Footer/>
     </div>
   )
 }
