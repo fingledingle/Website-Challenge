@@ -1,12 +1,14 @@
 .decorar_arranhar{
     position: absolute;
     display: flex;
-    top: 387%;
+    top: 376.8%;
+    height: 650px;
     justify-content: center;
     align-items: center;
     width: 1280px;
     left: 50%;
     transform: translateX(-50%);
+    background-color: #EFEFEF;
 
 }
 

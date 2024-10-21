@@ -43,6 +43,8 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
+    transform: translateY(10px);
+
 }
 
 .adoradores_page .top h2{
