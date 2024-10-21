@@ -1,6 +1,5 @@
 .colecoes{
-    height: 100vh;
-    width: 100vw;
+    height: 30vh;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -8,149 +7,194 @@
 }
 
 .colecoes .actual-page {
-    height: 80%;
-    width: 70vw;
+    width: 1280px;
     position: relative;
 
 }
 
-.actual-page .top{
-    position: absolute;
-    left: 0;
-    width: 100%;
-    display: flex;
-    padding: 0px 10px;
-    gap: 50px;
-    justify-content: end;
-}
 
-.actual-page .top .blue-box{
-    z-index: 2;
-    width: 483px;
-    height: 210px;
-    background-color: #4DA1B1;
-    position: relative;
-}
-
-.actual-page .top .blue-box p{
-    position: absolute;
-    top: 50%;
-    left: 67%;
-    transform: translate(-50%, -50%);
-    font-family: Sora;
-    font-weight: 700;
-    font-size: 50px;
-    line-height: 57px;
-    color: white;
-
-}
+    /* PARTS THAT DONT MOVE */
+        .actual-page .non_moving{
+            position: absolute;
+            left: 0;
+            height: auto;
+            top: 0;
+            width: 1280px;
+            padding: 0px 15px;
+        }
 
 
-.actual-page .top .text{
-    display: flex;
-    align-items: top;
-    gap: 150px;
-}
+        .actual-page .non_moving .text{
+            display: flex;
+            justify-content: end;
+            align-items: top;
+            gap: 125px;
+            position: relative;
+        }
 
-.actual-page .top .text h3{
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Sora';
-    text-transform: uppercase;
-}
+        .actual-page .non_moving .text h3{
+            width: 115px;
+            height: 15px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: 'Sora';
+            text-transform: uppercase;
+        }
 
-.actual-page .top .text a{
-    font-size: 14px;
-    font-weight: 200;
-    text-decoration-color: grey;
-    color: black;
-    font-family: 'Sora';
-    text-transform: uppercase;
-}
-
-
-.top .text .arrows{
-    display: flex;
-    align-items: start;
-    gap: 40px;
-
-}
-
-.top .text .arrows button{
-    background-color: transparent;
-    border-style: none;
-}
-
-.colecoes .actual-page .empty-cat-house{
-    position: absolute;
-    z-index: 2;
-    width: 360px;
-    height: 469px;
-    left: 0;
-    top: 76px;
-}
+        .actual-page .non_moving .text a{
+            width: 82px;
+            height: 10px;
+            font-size: 14px;
+            font-weight: 200;
+            text-decoration-color: grey;
+            color: black;
+            font-family: 'Sora';
+            text-transform: uppercase;
+        }
 
 
-.colecoes .actual-page .button-text{
-    position: absolute;
-    width: 338px;
-    left: 400px;
-    top: 270px;
-}
+        .non_moving .text .arrows{
+            display: flex;
+            height: 0;
+            gap: 30px;
 
-.colecoes .actual-page .button-text p{
-    font-family: Sora;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 30px;
+        }
+
+        .non_moving .text .arrows button{
+            background-color: transparent;
+            border-style: none;
+        }
+
+        /* BACKGROUND RECTANGLE */
+
+            .colecoes .actual-page .background-rectangle{
+                position: absolute;
+                z-index: 1;
+                left: 290px;
+                top: 85px;
+                width: 568px;
+                height: 568px;
+            }
+        
+
+        /* BACKGROUND CIRCLE */
+
+            .colecoes .actual-page .background-circle{
+                position: absolute;
+                width: 298px;
+                height: 298px;
+                left: calc(64% - 6.5% + 83.5px);
+                top: 70px; 
+            }
+            
+        
+
+
+    /* PARTS THAT MOVE */
     
+        .actual-page .moving_box{
+            position: relative;
+        }
 
-}
+        /* MINIMALISMO */
+
+            .actual-page .moving_box .blue_box{
+                position: absolute;
+                z-index: 2;
+                width: 483px;
+                height: 210px;
+                top: 0;
+                left: 140px;
+                background-color: #4DA1B1;
+            }
+
+            .actual-page .moving_box .blue_box p{
+                position: absolute;
+                top: 50%;
+                left: 67%;
+                transform: translate(-50%, -50%);
+                font-family: Sora;
+                font-weight: 700;
+                font-size: 50px;
+                line-height: 57px;
+                color: white;
+            }
+            
+            
 
 
-.colecoes .actual-page .button-text button{
-    margin-top: 30px;
-    padding: 8px 35px;
-    border: 1px solid black;
-    border-radius: 30px;
-    background-color: transparent;
-    text-transform: uppercase;
-    font-family: Sora;
-    font-weight: 400;
-    font-size: 20px;
-}
+        /* LEFT CAT HOUSE */
+            .colecoes .actual-page .moving_box .empty-cat-house{
+                position: absolute;
+                z-index: 2;
+                width: 360px;
+                height: 469px;
+                left: 0;
+                top: 76px;
+            }
 
-.colecoes .actual-page .background-rectangle{
-    position: absolute;
-    z-index: 1;
-    left: 290px;
-    top: 85px;
-    width: 568px;
-    height: 568px;
-}
+        /* TEXT BELOW THE CAT HOUSE */
+            .colecoes .actual-page .moving_box .button-text p{
+                font-family: Sora;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                
+            
+            }
 
-.colecoes .actual-page .cat-house {
-    position: absolute;
-    left: 57.5%;
-    z-index: 2;
-    top: 85%;
-    width: 465px;
-    height: 579px;
-}
 
-.colecoes .actual-page .background-circle{
-    position: absolute;
-    width: 298px;
-    height: 298px;
-    left: calc(64% - 6.5% + 83.5px);
-    top: 70px; 
-}
 
-.colecoes .actual-page .random-button{
+        /* BUTTON */
+            .colecoes .actual-page .moving_box .button-text{
+                position: absolute;
+                width: 338px;
+                left: 400px;
+                top: 270px;
+            }
+        
+
+            .colecoes .actual-page .moving_box .button-text button{
+                margin-top: 30px;
+                padding: 8px 35px;
+                border: 1px solid black;
+                border-radius: 30px;
+                background-color: transparent;
+                text-transform: uppercase;
+                font-family: Sora;
+                font-weight: 400;
+                font-size: 20px;
+            }
+
+
+
+        /* GATO E BOTAO + */
+        .colecoes .actual-page .cat_container {
+            position: absolute;
+            top: 180px;
+            left: 59%;
+            background-color: red;
+        }
+        .colecoes .actual-page .cat_container .product_with_animal{
+            position: relative;
+            overflow: hidden;
+            width: 465px;
+            height: 579px;
+        }
+
+        .colecoes .actual-page  .product_with_animal .cat-house {
+            position: absolute;
+            object-fit: cover;
+            z-index: 2;
+            width: 100%;
+            top: -60px;
+        }
+
+.colecoes .actual-page .product_with_animal .random-button{
     position: absolute;
     z-index: 3;
-    top: 430px;
-    left: 880px;
+    top: 245px;
+    left: 110px;
     border-style: none;
     background-color: white;
     display: flex;

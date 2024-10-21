@@ -28,11 +28,11 @@ function App() {
         setProductInCart={setProductInCart}
         productinCart={productinCart}
       />
-      <ShowCase/>
+      {/* <ShowCase/>
       <DecorarArranhar/>
       <AdoradoresdePapelao/>
       <NewsLetter/>
-      <Footer/>
+      <Footer/> */}
     </div>
   )
 }
