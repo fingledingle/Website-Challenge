@@ -3,10 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: pink; */
-    /* height: 100vh; */
     position: absolute;
     top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
     
 }
 
