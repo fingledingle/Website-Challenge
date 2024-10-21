@@ -36,12 +36,9 @@ function DecorarArranhar(){
 
 
                     <p>Hammer can low idea of. Lunch able design items needle here stop drive. / or devil pants game close. Prioritize out key view / vendor we've. 4-blocker gave shift ideal based post.</p>
-                    <Botao
-                    botao={{
-                        texto: 'mais sobre a gat',
-                        cor: 'white'
-                    }}/>
-                    <p></p>
+                    <button className="mais_sobre_a_gat">
+                        MAIS SOBRE A GAT
+                    </button>
                 </div>
 
 

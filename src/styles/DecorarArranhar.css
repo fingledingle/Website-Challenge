@@ -1,17 +1,20 @@
 .decorar_arranhar{
-    /* height: 100vh; */
+    position: absolute;
     display: flex;
+    top: 387%;
     justify-content: center;
     align-items: center;
+    width: 1280px;
+
 }
 
 .decorar_arranhar .decorar_page{
-    width: 70vw;
     display: flex;
+    width: 100%;
     gap: 6%;
     justify-content: center;
     justify-content: row;
-    background-color: white;
+    /* background-color: red; */
 
     
 }
@@ -94,4 +97,20 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 25px;
+}
+
+
+.decorar_page .right_side .mais_sobre_a_gat{
+    width: 295px;
+    height: 45px;
+    background-color: white;
+    border-style: none;
+    border: 2px solid black;
+    border-radius: 30px;
+    margin-top: 40px;
+    font-family: Sora;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25.2px;
+
 }

@@ -35,9 +35,9 @@ function App() {
 
 
       <ShowCase/>
-      {/* <DecorarArranhar/>
+      <DecorarArranhar/>
       <AdoradoresdePapelao/>
-      <NewsLetter/>
+      {/* <NewsLetter/>
       <Footer/> */}
     </div>
   )
