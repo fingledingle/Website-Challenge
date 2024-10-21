@@ -1,17 +1,13 @@
 
 
 .landing-page{
-    /* width: 100vh;
-    height: 100vh; */
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
 }
 
 .landing-page .middle{
-    top: 5px;
     width: 1280px;
     margin-top: 10px;
     /* height: 660px; */

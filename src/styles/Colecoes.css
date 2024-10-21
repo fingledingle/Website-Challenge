@@ -1,10 +1,15 @@
 .colecoes{
-    height: 30vh;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* background-color: pink; */
+    /* height: 100vh; */
+    position: absolute;
+    top: 110%;
+    
 }
+
 
 .colecoes .actual-page {
     width: 1280px;

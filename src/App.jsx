@@ -21,15 +21,21 @@ function App() {
         productinCart={productinCart}
         setProductInCart={setProductInCart}
       /> */}
-      <LandingPage/>
-      <Colecoes/>
-      <Produtos 
-        //prop drilling :(
-        setProductInCart={setProductInCart}
-        productinCart={productinCart}
-      />
-      {/* <ShowCase/>
-      <DecorarArranhar/>
+
+        <LandingPage/>
+
+
+        <Colecoes/>
+
+        <Produtos 
+          //prop drilling :(
+          setProductInCart={setProductInCart}
+          productinCart={productinCart}
+        />
+
+
+      <ShowCase/>
+      {/* <DecorarArranhar/>
       <AdoradoresdePapelao/>
       <NewsLetter/>
       <Footer/> */}

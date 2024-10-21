@@ -47,28 +47,28 @@ function Colecoes(){
 
 
 
-                    <div className="moving_box">
+                <div className="moving_box">
 
-                        <div className="blue_box">
-                            <p>MINIMA <br />LISMO</p>
-                        </div>
-                                            
-                        <img className="empty-cat-house" src={image1} alt="empty cat house"/>
+                    <div className="blue_box">
+                        <p>MINIMA <br />LISMO</p>
+                    </div>
+                                        
+                    <img className="empty-cat-house" src={image1} alt="empty cat house"/>
 
-                        <div className="button-text">
-                            <p>Also reality power discussion buy-in closest goto model. Have protocol at long practices low-hanging data most driver's.</p>
-                            <button>explorar</button>
-                        </div>
+                    <div className="button-text">
+                        <p>Also reality power discussion buy-in closest goto model. Have protocol at long practices low-hanging data most driver's.</p>
+                        <button>explorar</button>
+                    </div>
 
 
 
-                        <div className="cat_container">
-                            <div className="product_with_animal">
-                                <img className="cat-house" src={kittyHouse} alt="cat inside cat house" />
-                                <button className="random-button">+</button>
-                            </div>
+                    <div className="cat_container">
+                        <div className="product_with_animal">
+                            <img className="cat-house" src={kittyHouse} alt="cat inside cat house" />
+                            <button className="random-button">+</button>
                         </div>
                     </div>
+                </div>
             </div>
 
 
